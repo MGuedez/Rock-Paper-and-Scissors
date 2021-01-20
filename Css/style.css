@@ -42,3 +42,52 @@ body {
     font-weight: var(--weight--400);
     background-color: var(--main-color);
 }
+
+/* ----------Contenedor---------- */
+.container {
+    width: 100%;
+	max-width: 800px;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		'instruction'
+		'modal'
+		'main'
+		'footer';
+}
+
+/* ----------Boton de Instrucciones---------- */
+.instructions {
+    grid-area: instruction;
+}
+
+.buttons {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+
+.buttons:active {
+    background: linear-gradient(315deg, #181818, #1d1d1d);
+    box-shadow: -6px -6px 12px #151515,
+                6px 6px 12px #212121;
+}
+
+.buttons:active .fa-tasks {
+    color: var(--secondary-gray);
+}
+
+.instruction__button {
+    border-radius: var(--border-radius);
+    padding: 1.3rem;
+}
+
+.instruction__button .fa-tasks {
+    font-size: 2.3rem;
+    color: var(--secondary-color);
+}
