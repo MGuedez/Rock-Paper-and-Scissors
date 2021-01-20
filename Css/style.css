@@ -53,8 +53,8 @@ body {
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
 		'instruction'
-		'modal'
-		'main'
+        'logo'
+        'button'
 		'footer';
 }
 
@@ -156,4 +156,14 @@ body {
 
 .list {
     margin-left: 2rem;
+}
+
+/* ----------Logo---------- */
+.logo {
+    grid-area: logo;
+    padding: 3rem 0 5rem;
+}
+
+.logo img {
+    width: 32rem;
 }
