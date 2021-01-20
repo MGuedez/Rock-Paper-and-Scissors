@@ -167,3 +167,23 @@ body {
 .logo img {
     width: 32rem;
 }
+
+/* ----------Boton Jugar---------- */
+.play__button {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.3rem 2.5rem;
+    border-radius: var(--border-radius-button);
+    color: var(--secondary-color);
+}
+
+.button__text {
+    font-family: var(--secondary--font);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.button__icon {
+    padding-left: 1rem;
+    font-size: 2.7rem;
+}
