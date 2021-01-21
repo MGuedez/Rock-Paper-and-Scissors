@@ -35,16 +35,18 @@
         <section class="battlefield">
             <div class="battlefield__machine">
                 <span class="machine__name battlefield__name">Machine</span>
-                <div class="movement__container movement__machine flex">
+                <div class="movement__container movement__machine flex" id="movementMachine">
                     <i class="fas fa-sync-alt"></i>
                     <span class="loading__text">waiting for your move</span>
+                    <img id="opt__machine" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
                 </div>
             </div>
             <div class="battlefield__user">
                 <span class="user__name battlefield__name">Human</span>
-                <div class="movement__container movement__user flex">
+                <div class="movement__container movement__user flex" id="movementUser">
                     <i class="fas fa-sync-alt"></i>
                     <span class="loading__text">make your move</span>
+                    <img id="opt__user" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
                 </div>
             </div>
         </section>
@@ -84,5 +86,6 @@
             </div>
         </section>
     </div>
+    <script src="./Js/game.js"></script>
 </body>
 </html>
