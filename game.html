@@ -68,15 +68,15 @@
                 <img src="https://i.postimg.cc/FRzbjRDb/surrender1.png" alt="">
             </button>
         </section>
-        <section class="modal" id="modal">
+        <section class="modal" id="modal_game">
             <div class="flex" id="flex">
                 <div class="modal__content">
                     <div class="modal__header">
-                        <span class="winLose"></span>
+                        <span class="winLose" id="winLose"></span>
                         <span class="close" id="close">&times;</span>
                     </div>
                     <div class="modal__body">
-                        <span class="modal__text text"></span>
+                        <span class="modal__text text" id="winner"></span>
                         <button class="play__again btn__modal buttons flex" onclick="location.href = 'game.html';">
                             <span class="button__text">Play again!</span>
                             <i class="fas fa-gamepad button__icon"></i>

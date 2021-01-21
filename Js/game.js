@@ -78,7 +78,7 @@ function win() {
     userScore = userScore + 1;
     userPoints.innerHTML = userScore;
 
-    // stopGame()
+    stopGame()
 }
 
 // ----------funcion usuario pierde----------//
@@ -86,5 +86,26 @@ function lose() {
     machineScore = machineScore + 1;
     machinePoins.innerHTML = machineScore;
 
-    // stopGame();
+    stopGame();
+}
+
+// ----------funcion detener juego al terminar la partida----------//
+function stopGame() {
+    let showModal = document.getElementById("modal_game");
+    let winner = document.getElementById("winner");
+    let winLose = document.getElementById("winLose");
+
+    if ((userScore === 3) || (machineScore === 3)) {
+        showModal.style.transform = "translateY(0)";
+        showModal.style.opacity = "1";
+        showModal.style.visibility = "visible";
+        if (userScore === 3) {
+            winner.innerHTML = "Haz vencido a tu oponente con movimientos extrategicos.";
+            winLose.innerHTML = "you won";
+        } else {
+            winner.innerHTML = "Machine fue mas hábil, suerte para la próxima.";
+            winLose.innerHTML = "you lost";
+            winLose.style.color = "#ef0014";
+        }
+    }
 }

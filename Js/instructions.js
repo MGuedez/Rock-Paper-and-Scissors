@@ -4,7 +4,6 @@ let modal = document.getElementById("modal");
 let openModal = document.getElementById("openModal");
 openModal.addEventListener("click" , open);
 function open() {
-    // modal.style.display = "block";
     modal.style.transform = "translateY(0)";
     modal.style.opacity = "1";
     modal.style.visibility = "visible";

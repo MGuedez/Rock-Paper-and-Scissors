@@ -280,8 +280,7 @@ body {
 
 .winLose {
     font-size: 4rem;
-    /* color: #57d200; */
-    /* color: #ef0014; */
+    color: #57d200;
     text-shadow: .2rem .2rem #000;
 }
 
