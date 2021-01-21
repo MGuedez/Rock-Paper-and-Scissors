@@ -20,14 +20,14 @@
             <div class="scoreboard__competitors flex">
                 <div class="scoreboard__competitor--user">
                     <span class="competitor__user competitor">Human</span>
-                    <div class="score__user points">0</div>
+                    <div class="score__user points" id="scoreUser">0</div>
                 </div>
                 <div class="notification__screen">
-                    <span class="notidications"></span>
+                    <span class="notifications" id="notifications"></span>
                 </div>
                 <div class="scoreboard__competitor--machine">
                     <span class="competitor__machine competitor">Machine</span>
-                    <div class="score__machine points">0</div>
+                    <div class="score__machine points" id="scoreMachine">0</div>
                 </div>
             </div>
         </section>
@@ -35,18 +35,22 @@
         <section class="battlefield">
             <div class="battlefield__machine">
                 <span class="machine__name battlefield__name">Machine</span>
-                <div class="movement__container movement__machine flex" id="movementMachine">
-                    <i class="fas fa-sync-alt"></i>
-                    <span class="loading__text">waiting for your move</span>
-                    <img id="opt__machine" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
+                <div class="movement__container movement__machine flex">
+                    <div class="wait__for flex" id="movementMachine">
+                        <i class="fas fa-sync-alt"></i>
+                        <span class="loading__text">waiting for your move</span>
+                    </div>
+                    <img class="opt__machine" id="optMachine" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
                 </div>
             </div>
             <div class="battlefield__user">
                 <span class="user__name battlefield__name">Human</span>
-                <div class="movement__container movement__user flex" id="movementUser">
-                    <i class="fas fa-sync-alt"></i>
-                    <span class="loading__text">make your move</span>
-                    <img id="opt__user" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
+                <div class="movement__container movement__user flex">
+                    <div class="wait__for flex" id="movementUser">
+                        <i class="fas fa-sync-alt"></i>
+                        <span class="loading__text">make your move</span>
+                    </div>
+                    <img class="opt__user" id="optUser" src="https://i.postimg.cc/3RytWMHj/piedra.png" alt="rock">
                 </div>
             </div>
         </section>
