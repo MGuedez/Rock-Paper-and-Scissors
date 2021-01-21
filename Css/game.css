@@ -68,7 +68,7 @@ body {
 }
 
 /* ----------Tablero de Puntuación---------- */
-.scoreboard {
+/* .scoreboard {
     grid-area: scoreboard;
     position: relative;
     width: 100%;
@@ -97,10 +97,10 @@ body {
 
 .vs {
     width: 1.5rem;
-}
+} */
 
 /* ?Puntuación */
-.score {
+/* .score {
     height: 10rem;
     font-family: var(--secondary--font);
 }
@@ -117,4 +117,4 @@ body {
 .divisor {
     font-size: 5rem;
     color: var(--gray-color);
-}
+} */
