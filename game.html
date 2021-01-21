@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <section class="scoreboard">
-            <div class="scoreboard__title">
+            <div class="scoreboard__title flex">
                 <span>Scoreboard</span>
             </div>
             <div class="scoreboard__competitors flex">
@@ -37,14 +37,14 @@
                 <span class="machine__name battlefield__name">Machine</span>
                 <div class="movement__container movement__machine flex">
                     <i class="fas fa-sync-alt"></i>
-                    <span class="loading__text">La PC espera tu jugada</span>
+                    <span class="loading__text">waiting for your move</span>
                 </div>
             </div>
             <div class="battlefield__user">
                 <span class="user__name battlefield__name">Human</span>
                 <div class="movement__container movement__user flex">
                     <i class="fas fa-sync-alt"></i>
-                    <span class="loading__text">Haz tu jugada</span>
+                    <span class="loading__text">make your move</span>
                 </div>
             </div>
         </section>
@@ -61,6 +61,27 @@
             <button class="options__button surrender__button buttons" id="leave">
                 <img src="https://i.postimg.cc/FRzbjRDb/surrender1.png" alt="">
             </button>
+        </section>
+        <section class="modal" id="modal">
+            <div class="flex" id="flex">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <span class="winLose"></span>
+                        <span class="close" id="close">&times;</span>
+                    </div>
+                    <div class="modal__body">
+                        <span class="modal__text text"></span>
+                        <button class="play__again btn__modal buttons flex" onclick="location.href = 'game.html';">
+                            <span class="button__text">Play again!</span>
+                            <i class="fas fa-gamepad button__icon"></i>
+                        </button>
+                        <button class="exit__button btn__modal buttons flex" onclick="location.href = 'index.html';">
+                            <span class="button__text">Exit</span>
+                            <i class="fas fa-sign-out-alt button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
