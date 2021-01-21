@@ -194,6 +194,11 @@ body {
     font-size: 2.7rem;
 }
 
+.buttons:active .button__text,
+.buttons:active .button__icon {
+    color: var(--secondary-gray);
+}
+
 /* ----------Footer---------- */
 .footer {
     grid-area: footer;
