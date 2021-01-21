@@ -13,6 +13,9 @@ let machineScore = 0;
 let userPoints = document.getElementById("scoreUser");
 let machinePoins = document.getElementById("scoreMachine");
 
+let modal = document.getElementById("modal_game");
+let closeModal = document.getElementById("close");
+
 // ----------función principal del juego----------//
 function play() {
     buttonRock.addEventListener("click", () => game("rock"));
@@ -91,14 +94,11 @@ function lose() {
 
 // ----------funcion detener juego al terminar la partida----------//
 function stopGame() {
-    let showModal = document.getElementById("modal_game");
     let winner = document.getElementById("winner");
     let winLose = document.getElementById("winLose");
 
     if ((userScore === 3) || (machineScore === 3)) {
-        showModal.style.transform = "translateY(0)";
-        showModal.style.opacity = "1";
-        showModal.style.visibility = "visible";
+        open();
         if (userScore === 3) {
             winner.innerHTML = "Haz vencido a tu oponente con movimientos extrategicos.";
             winLose.innerHTML = "you won";
@@ -108,4 +108,36 @@ function stopGame() {
             winLose.style.color = "#ef0014";
         }
     }
+}
+
+// ----------funcion boton rendirse----------//
+buttonSurrender.addEventListener("click", giveUp )
+
+function giveUp() {
+    let modal = document.getElementById("modal_game");
+    let winLose = document.getElementById("winLose");
+    let msjSurrender = document.getElementById("winner");
+
+    modal.style.transform = "translateY(0)";
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+
+    winLose.innerHTML = "you lost";
+    winLose.style.color = "#ef0014";
+    msjSurrender.innerHTML = "Te haz rendido, suerte para la próxima.";
+}
+
+
+// modal
+// Abrir modal
+function open() {
+    modal.style.transform = "translateY(0)";
+    modal.style.opacity = "1";
+    modal.style.visibility = "visible";
+}
+
+// Cerrar modal
+closeModal.addEventListener("click" , close);
+function close() {
+    window.location.href = "../index.html";
 }
