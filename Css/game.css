@@ -53,7 +53,7 @@ body {
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
-		'instruction'
+		'scoreboard'
         'logo'
         'button'
 		'footer';
@@ -69,14 +69,10 @@ body {
 
 /* ----------Tablero de Puntuación---------- */
 .scoreboard {
+    grid-area: scoreboard;
     position: relative;
     width: 100%;
     border: 5px solid var(--secondary-gray);
-}
-
-.scoreboard__title {
-    position: absolute;
-    left: calc(100% - 50%);
 }
 
 .scoreboard__competitors {
@@ -101,4 +97,24 @@ body {
 
 .vs {
     width: 1.5rem;
+}
+
+/* ?Puntuación */
+.score {
+    height: 10rem;
+    font-family: var(--secondary--font);
+}
+
+.score.flex {
+    justify-content: space-evenly;
+}
+
+.points {
+    font-size: 8rem;
+    color: var(--secondary-color);
+}
+
+.divisor {
+    font-size: 5rem;
+    color: var(--gray-color);
 }
