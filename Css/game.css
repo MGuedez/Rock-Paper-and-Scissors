@@ -47,7 +47,7 @@ body {
 /* ----------Contenedor---------- */
 .container {
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
 	max-width: 800px;
 	padding: 20px;
 	display: grid;
@@ -106,6 +106,7 @@ body {
 
 .scoreboard__competitor--user,
 .scoreboard__competitor--machine {
+    width: 21.5rem;
     padding: 1rem 1rem 0;
 }
 
@@ -144,7 +145,7 @@ body {
 /* ----------Campo de Juego---------- */
 .battlefield {
     grid-area: battlefield;
-    height: 40rem;
+    height: 38rem;
     border: 8px solid var(--secondary-gray);
 }
 
@@ -197,4 +198,48 @@ body {
     position: absolute;
     bottom: -2.2rem;
     right: 1rem;
+}
+
+/* ----------Botones de opciones usuario---------- */
+.user__options {
+    grid-area: options;
+    position: relative;
+}
+
+.user__options.flex {
+    justify-content: space-between;
+}
+
+.options__button {
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+
+.options__button:nth-child(1) img {
+    width: 2.5rem;
+}
+
+.options__button:nth-child(2) img {
+    width: 3rem;
+}
+
+.options__button:nth-child(3) img {
+    width: 2.3rem;
+}
+
+.buttons:active {
+    background: linear-gradient(315deg, #181818, #1d1d1d);
+    box-shadow: -6px -6px 12px #151515,
+                6px 6px 12px #212121;
+}
+
+.surrender__button img {
+    width: 3rem;
 }
