@@ -54,9 +54,9 @@ body {
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
 		'scoreboard'
-        'logo'
-        'button'
-		'footer';
+        'divisor'
+        'battlefield'
+		'options';
 }
 
 .flex {
@@ -118,6 +118,7 @@ body {
 
 .competitor {
     font-size: 1.5rem;
+    text-transform: uppercase;
     color: var(--gray-color);
 }
 
@@ -131,4 +132,14 @@ body {
     height: 100%;
     background-image: url("https://i.postimg.cc/VvzhbNgW/grid.png");
     background-size: 1rem;
+}
+
+/* ----------Disision---------- */
+.divisor__text {
+    grid-area: divisor;
+    font-size: 1.5rem;
+    font-weight: var(--weight--500);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gray-color);
 }
