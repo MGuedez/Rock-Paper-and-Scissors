@@ -48,7 +48,8 @@ function game(option) {
     } else if ((motionUser === "scissors") && (motionPc === "paper")) {
         win(motionUser, motionPc);
     } else if (motionUser === motionPc) {
-        notification.innerHTML = "tie"
+        notification.innerHTML = "tie";
+        notification.style.color = "#fdc20a";
     } else {
         lose(motionUser);
     }
