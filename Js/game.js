@@ -48,7 +48,7 @@ function game(option) {
     } else if ((motionUser === "scissors") && (motionPc === "paper")) {
         win(motionUser, motionPc);
     } else if (motionUser === motionPc) {
-        notification.innerHTML = "Empate"
+        notification.innerHTML = "tie"
     } else {
         lose(motionUser);
     }
@@ -80,6 +80,8 @@ function machineOption() {
 function win() {
     userScore = userScore + 1;
     userPoints.innerHTML = userScore;
+    notification.innerHTML = "win"
+    notification.style.color = "#57d200"
 
     stopGame()
 }
@@ -88,6 +90,8 @@ function win() {
 function lose() {
     machineScore = machineScore + 1;
     machinePoins.innerHTML = machineScore;
+    notification.innerHTML = "lose"
+    notification.style.color = "#ef0014"
 
     stopGame();
 }
@@ -128,7 +132,7 @@ function giveUp() {
 }
 
 
-// modal
+// ----------modal----------//
 // Abrir modal
 function open() {
     modal.style.transform = "translateY(0)";
