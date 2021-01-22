@@ -117,7 +117,6 @@ body {
 
 .modal__content {
     position: relative;
-    z-index: var(--z-modal);
     width: 80%;
     margin: auto;
     padding: 5rem 3rem;
@@ -128,6 +127,7 @@ body {
 .modal__logo {
     text-align: center;
     margin-bottom: 2.5rem;
+    animation: pulse 1s infinite;
 }
 
 .modal__logo img {

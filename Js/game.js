@@ -106,10 +106,10 @@ function stopGame() {
         open();
         if (userScore === 3) {
             winner.innerHTML = "Haz vencido a tu oponente con movimientos extrategicos.";
-            winLose.innerHTML = "you won";
+            winLose.innerHTML = "you win";
         } else {
             winner.innerHTML = "Machine fue mas hábil, suerte para la próxima.";
-            winLose.innerHTML = "you lost";
+            winLose.innerHTML = "you lose";
             winLose.style.color = "#ef0014";
         }
     }
@@ -127,7 +127,7 @@ function giveUp() {
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
 
-    winLose.innerHTML = "you lost";
+    winLose.innerHTML = "you lose";
     winLose.style.color = "#ef0014";
     msjSurrender.innerHTML = "Te haz rendido, suerte para la próxima.";
 }
@@ -143,6 +143,8 @@ function open() {
 
 // Cerrar modal
 closeModal.addEventListener("click" , close);
+
 function close() {
+    console.log("enet")
     window.location.href = "../index.html";
 }
