@@ -50,6 +50,9 @@ function game(option) {
     } else if (motionUser === motionPc) {
         notification.innerHTML = "tie";
         notification.style.color = "#fdc20a";
+
+        hideNotification();
+
     } else {
         lose(motionUser);
     }
@@ -76,6 +79,13 @@ function machineOption() {
     return motionMachine;
 }
 
+// ----------funcion ocultar notificaciones en el tablero----------//
+function hideNotification() {
+    setTimeout(function() {
+        notification.innerHTML = ""
+    }, 900);
+}
+
 
 // ----------funcion usuario gana----------//
 function win() {
@@ -84,7 +94,8 @@ function win() {
     notification.innerHTML = "win"
     notification.style.color = "#57d200"
 
-    stopGame()
+    hideNotification();
+    stopGame();
 }
 
 // ----------funcion usuario pierde----------//
@@ -94,6 +105,7 @@ function lose() {
     notification.innerHTML = "lose"
     notification.style.color = "#ef0014"
 
+    hideNotification();
     stopGame();
 }
 
