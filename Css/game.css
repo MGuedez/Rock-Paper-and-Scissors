@@ -108,7 +108,6 @@ body {
 .scoreboard__competitor--user,
 .scoreboard__competitor--machine {
     width: 21.5rem;
-    padding: 1rem 1rem 0;
 }
 
 .competitor {

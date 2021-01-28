@@ -33,15 +33,7 @@
 }
 
 /* ?----------Vista del Juego---------- */
-.container {
-    padding: 40px;
-}
-
 /* ----------Tablero de Puntuación---------- */
-.scoreboard__title span {
-    font-size: 4rem;
-}
-
 .competitor {
     font-size: 2rem;
 }
@@ -56,7 +48,7 @@
 
 /* ----------Disision---------- */
 .divisor__text {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 /* ----------Campo de Juego---------- */
@@ -98,13 +90,13 @@
 .machine__name {
     writing-mode: vertical-rl;
     top: 35rem;
-    left: 30.8rem;
+    left: 32.8rem;
 }
 
 .user__name {
     writing-mode: sideways-lr;
     bottom: 37rem;
-    right: 30.8rem;
+    right: 32.8rem;
 }
 
 /* ----------Botones de opciones usuario---------- */
