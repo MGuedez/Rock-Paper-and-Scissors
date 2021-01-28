@@ -106,3 +106,29 @@
     bottom: 37rem;
     right: 30.8rem;
 }
+
+/* ----------Botones de opciones usuario---------- */
+.user__options.flex {
+    justify-content: space-evenly;
+}
+
+.options__button {
+    width: 10rem;
+    height: 10rem;
+}
+
+.options__button:nth-child(1) img {
+    width: 4.5rem;
+}
+
+.options__button:nth-child(2) img {
+    width: 5rem;
+}
+
+.options__button:nth-child(3) img {
+    width: 4rem;
+}
+
+.surrender__button img {
+    width: 4.8rem;
+}
