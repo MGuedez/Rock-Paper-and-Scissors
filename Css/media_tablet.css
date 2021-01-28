@@ -1,0 +1,33 @@
+/* ?----------Vista Principal---------- */
+/* ----------Boton de Instrucciones---------- */
+
+.instruction__button {
+    padding: 1.6rem;
+}
+
+.instruction__button .fa-tasks {
+    font-size: 3rem;
+}
+
+/* ----------Modal de Instrucciones---------- */
+.close {
+    font-size: 5.5rem;
+}
+
+.modal__text {
+    font-size: 2.2rem;
+}
+
+.list {
+    margin-left: 4rem;
+}
+
+/* ----------Boton Jugar---------- */
+.button__text {
+    font-size: 3rem;
+}
+
+.button__icon {
+    padding-left: 2rem;
+    font-size: 3.8rem;
+}
