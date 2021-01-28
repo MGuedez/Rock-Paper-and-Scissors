@@ -37,6 +37,8 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     font-family: var(--main--font);
     font-weight: var(--weight--400);
     background-color: var(--main-color);
@@ -131,7 +133,7 @@ body {
 }
 
 .modal__logo img {
-    width: 20rem;
+    width: 65%;
 }
 
 .close {
@@ -166,7 +168,7 @@ body {
 }
 
 .logo img {
-    width: 28rem;
+    width: 75%;
 }
 
 /* ----------Boton Jugar---------- */
@@ -174,7 +176,7 @@ body {
     grid-area: button;
     width: 75%;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 2.8rem;
     animation: pulse 1s infinite;
     border-radius: var(--border-radius-button);
     color: var(--secondary-color);

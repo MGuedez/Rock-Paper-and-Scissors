@@ -38,6 +38,8 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     font-family: var(--main--font);
     font-weight: var(--weight--400);
     text-transform: uppercase;

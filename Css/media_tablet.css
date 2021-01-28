@@ -1,0 +1,134 @@
+/* ?----------Vista Principal---------- */
+/* ----------Boton de Instrucciones---------- */
+
+.instruction__button {
+    padding: 1.6rem;
+}
+
+.instruction__button .fa-tasks {
+    font-size: 3rem;
+}
+
+/* ----------Modal de Instrucciones---------- */
+.close {
+    font-size: 5.5rem;
+}
+
+.modal__text {
+    font-size: 2.2rem;
+}
+
+.list {
+    margin-left: 4rem;
+}
+
+/* ----------Boton Jugar---------- */
+.button__text {
+    font-size: 3rem;
+}
+
+.button__icon {
+    padding-left: 2rem;
+    font-size: 3.8rem;
+}
+
+/* ?----------Vista del Juego---------- */
+.container {
+    padding: 40px;
+}
+
+/* ----------Tablero de Puntuación---------- */
+.scoreboard__title span {
+    font-size: 4rem;
+}
+
+.competitor {
+    font-size: 2rem;
+}
+
+.points {
+    font-size: 5.5rem;
+}
+
+.notifications {
+    font-size: 6rem;
+}
+
+/* ----------Disision---------- */
+.divisor__text {
+    font-size: 2.2rem;
+}
+
+/* ----------Campo de Juego---------- */
+.battlefield {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.battlefield__machine,
+.battlefield__user {
+    height: 100%;
+}
+
+.battlefield__user {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.battlefield__machine {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.battlefield__machine {
+    border-bottom:none;
+    border-left: 4px dashed var(--secondary-gray);
+}
+
+.battlefield__user {
+    border-top:none;
+    border-right: 4px dashed var(--secondary-gray);
+}
+
+.battlefield__name {
+    font-size: 2.5rem;
+    /* text-orientation: upright; */
+}
+
+.machine__name {
+    writing-mode: vertical-rl;
+    top: 35rem;
+    left: 30.8rem;
+}
+
+.user__name {
+    writing-mode: sideways-lr;
+    bottom: 37rem;
+    right: 30.8rem;
+}
+
+/* ----------Botones de opciones usuario---------- */
+.user__options.flex {
+    justify-content: space-evenly;
+}
+
+.options__button {
+    width: 10rem;
+    height: 10rem;
+}
+
+.options__button:nth-child(1) img {
+    width: 4.5rem;
+}
+
+.options__button:nth-child(2) img {
+    width: 5rem;
+}
+
+.options__button:nth-child(3) img {
+    width: 4rem;
+}
+
+.surrender__button img {
+    width: 4.8rem;
+}
