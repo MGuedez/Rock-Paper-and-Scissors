@@ -58,3 +58,51 @@
 .divisor__text {
     font-size: 2.2rem;
 }
+
+/* ----------Campo de Juego---------- */
+.battlefield {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.battlefield__machine,
+.battlefield__user {
+    height: 100%;
+}
+
+.battlefield__user {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.battlefield__machine {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.battlefield__machine {
+    border-bottom:none;
+    border-left: 4px dashed var(--secondary-gray);
+}
+
+.battlefield__user {
+    border-top:none;
+    border-right: 4px dashed var(--secondary-gray);
+}
+
+.battlefield__name {
+    font-size: 2.5rem;
+    /* text-orientation: upright; */
+}
+
+.machine__name {
+    writing-mode: vertical-rl;
+    top: 35rem;
+    left: 30.8rem;
+}
+
+.user__name {
+    writing-mode: sideways-lr;
+    bottom: 37rem;
+    right: 30.8rem;
+}
