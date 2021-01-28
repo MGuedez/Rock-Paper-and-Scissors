@@ -124,3 +124,17 @@
 .surrender__button img {
     width: 4.8rem;
 }
+
+/* ----------Modal finalizacion del juego---------- */
+.modal__content {
+    width: 65%;
+    padding: 10rem 6rem;
+}
+
+.winLose {
+    font-size: 8rem;
+}
+
+.play__again {
+    margin-bottom: 3.5rem;
+}
