@@ -1,0 +1,70 @@
+/* ?----------Vista del Juego---------- */
+.container {
+	grid-gap: 10px;
+}
+
+/* ----------Tablero de Puntuación---------- */
+.scoreboard__competitor--machine,
+.scoreboard__competitor--user {
+    padding-top: 1rem;
+}
+
+.competitor {
+    font-size: 1.8rem;
+}
+
+.points {
+    font-size: 4.5rem;
+}
+
+.notifications {
+    font-size: 5rem;
+}
+
+/* ----------Disision---------- */
+.divisor__text {
+    display: none;
+}
+
+/* ----------Campo de Juego---------- */
+.machine__name {
+    top: 17rem;
+    left: 34.5rem;
+}
+
+.user__name {
+    bottom: 19rem;
+    right: 34.5rem;
+}
+
+
+/* ----------Botones de opciones usuario---------- */
+.user__options {
+    padding-top: 1rem;
+}
+
+.options__button {
+    width: 8rem;
+    height: 8rem;
+}
+
+.options__button:nth-child(1) img {
+    width: 3.5rem;
+}
+
+.options__button:nth-child(2) img {
+    width: 4rem;
+}
+
+.options__button:nth-child(3) img {
+    width: 3rem;
+}
+
+.surrender__button img {
+    width: 4rem;
+}
+
+/* ----------Modal finalizacion del juego---------- */
+.modal__content {
+    width: 35%;
+}

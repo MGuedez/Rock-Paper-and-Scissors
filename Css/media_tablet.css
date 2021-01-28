@@ -94,7 +94,7 @@
 }
 
 .user__name {
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     bottom: 37rem;
     right: 32.8rem;
 }
@@ -128,7 +128,6 @@
 /* ----------Modal finalizacion del juego---------- */
 .modal__content {
     width: 65%;
-    padding: 10rem 6rem;
 }
 
 .winLose {
