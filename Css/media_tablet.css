@@ -31,3 +31,30 @@
     padding-left: 2rem;
     font-size: 3.8rem;
 }
+
+/* ?----------Vista del Juego---------- */
+.container {
+    padding: 40px;
+}
+
+/* ----------Tablero de Puntuación---------- */
+.scoreboard__title span {
+    font-size: 4rem;
+}
+
+.competitor {
+    font-size: 2rem;
+}
+
+.points {
+    font-size: 5.5rem;
+}
+
+.notifications {
+    font-size: 6rem;
+}
+
+/* ----------Disision---------- */
+.divisor__text {
+    font-size: 2.2rem;
+}
