@@ -1,6 +1,12 @@
+body {
+    background-image: url("https://i.postimg.cc/GmkqbfLJ/background1.jpg");
+    background-position: center;
+}
+
 /* ?----------Vista del Juego---------- */
 .container {
-	grid-gap: 10px;
+    grid-gap: 10px;
+    background-color: var(--main-color);
 }
 
 /* ----------Tablero de Puntuación---------- */
@@ -27,16 +33,19 @@
 }
 
 /* ----------Campo de Juego---------- */
+.battlefield__name {
+    padding: 1rem .5rem ;
+}
+
 .machine__name {
-    top: 17rem;
-    left: 34.5rem;
+    top: -3rem;
+    left: 23rem;
 }
 
 .user__name {
-    bottom: 19rem;
-    right: 34.5rem;
+    bottom: -3rem;
+    right: 25rem;
 }
-
 
 /* ----------Botones de opciones usuario---------- */
 .user__options {

@@ -210,7 +210,7 @@ body {
 }
 
 .user__options.flex {
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .buttons {
