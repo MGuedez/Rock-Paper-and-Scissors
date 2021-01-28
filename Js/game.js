@@ -48,7 +48,11 @@ function game(option) {
     } else if ((motionUser === "scissors") && (motionPc === "paper")) {
         win(motionUser, motionPc);
     } else if (motionUser === motionPc) {
-        notification.innerHTML = "tie"
+        notification.innerHTML = "tie";
+        notification.style.color = "#fdc20a";
+
+        hideNotification();
+
     } else {
         lose(motionUser);
     }
@@ -75,6 +79,13 @@ function machineOption() {
     return motionMachine;
 }
 
+// ----------funcion ocultar notificaciones en el tablero----------//
+function hideNotification() {
+    setTimeout(function() {
+        notification.innerHTML = ""
+    }, 900);
+}
+
 
 // ----------funcion usuario gana----------//
 function win() {
@@ -83,7 +94,8 @@ function win() {
     notification.innerHTML = "win"
     notification.style.color = "#57d200"
 
-    stopGame()
+    hideNotification();
+    stopGame();
 }
 
 // ----------funcion usuario pierde----------//
@@ -93,6 +105,7 @@ function lose() {
     notification.innerHTML = "lose"
     notification.style.color = "#ef0014"
 
+    hideNotification();
     stopGame();
 }
 
@@ -105,10 +118,10 @@ function stopGame() {
         open();
         if (userScore === 3) {
             winner.innerHTML = "Haz vencido a tu oponente con movimientos extrategicos.";
-            winLose.innerHTML = "you won";
+            winLose.innerHTML = "you win";
         } else {
             winner.innerHTML = "Machine fue mas hábil, suerte para la próxima.";
-            winLose.innerHTML = "you lost";
+            winLose.innerHTML = "you lose";
             winLose.style.color = "#ef0014";
         }
     }
@@ -126,7 +139,7 @@ function giveUp() {
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
 
-    winLose.innerHTML = "you lost";
+    winLose.innerHTML = "you lose";
     winLose.style.color = "#ef0014";
     msjSurrender.innerHTML = "Te haz rendido, suerte para la próxima.";
 }
@@ -142,6 +155,8 @@ function open() {
 
 // Cerrar modal
 closeModal.addEventListener("click" , close);
+
 function close() {
+    console.log("enet")
     window.location.href = "../index.html";
 }

@@ -117,7 +117,6 @@ body {
 
 .modal__content {
     position: relative;
-    z-index: var(--z-modal);
     width: 80%;
     margin: auto;
     padding: 5rem 3rem;
@@ -128,6 +127,7 @@ body {
 .modal__logo {
     text-align: center;
     margin-bottom: 2.5rem;
+    animation: pulse 1s infinite;
 }
 
 .modal__logo img {
@@ -175,6 +175,7 @@ body {
     width: 75%;
     margin: 0 auto;
     padding: 2.5rem;
+    animation: pulse 1s infinite;
     border-radius: var(--border-radius-button);
     color: var(--secondary-color);
 }
@@ -215,4 +216,18 @@ body {
 
 .author a {
     color: var(--secondary-color);
+}
+
+/* ?----------Animations---------- */
+/* logo */
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }

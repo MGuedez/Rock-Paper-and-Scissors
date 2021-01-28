@@ -127,8 +127,7 @@ body {
 }
 
 .notifications {
-    font-size: 3.5rem;
-    color: var(--secondary-color);
+    font-size: 3rem;
     text-shadow: .2rem .2rem var(--optional-gray);
 }
 
@@ -280,6 +279,7 @@ body {
 .modal__header {
     text-align: center;
     margin-bottom: 2.5rem;
+    animation: pulse 1s infinite;
 }
 
 .winLose {
@@ -333,4 +333,18 @@ body {
 .buttons:active .button__text,
 .buttons:active .button__icon {
     color: var(--optional-gray);
+}
+
+/* ?----------Animations---------- */
+/* Texto del modal */
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
