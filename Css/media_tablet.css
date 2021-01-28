@@ -33,15 +33,7 @@
 }
 
 /* ?----------Vista del Juego---------- */
-.container {
-    padding: 40px;
-}
-
 /* ----------Tablero de Puntuación---------- */
-.scoreboard__title span {
-    font-size: 4rem;
-}
-
 .competitor {
     font-size: 2rem;
 }
@@ -56,7 +48,7 @@
 
 /* ----------Disision---------- */
 .divisor__text {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 /* ----------Campo de Juego---------- */
@@ -92,26 +84,19 @@
 
 .battlefield__name {
     font-size: 2.5rem;
-    /* text-orientation: upright; */
 }
 
 .machine__name {
-    writing-mode: vertical-rl;
-    top: 35rem;
-    left: 30.8rem;
+    top: -2.5rem;
+    left: 20rem;
 }
 
 .user__name {
-    writing-mode: sideways-lr;
-    bottom: 37rem;
-    right: 30.8rem;
+    bottom: -2.5rem;
+    right: 22rem;
 }
 
 /* ----------Botones de opciones usuario---------- */
-.user__options.flex {
-    justify-content: space-evenly;
-}
-
 .options__button {
     width: 10rem;
     height: 10rem;
@@ -131,4 +116,17 @@
 
 .surrender__button img {
     width: 4.8rem;
+}
+
+/* ----------Modal finalizacion del juego---------- */
+.modal__content {
+    width: 65%;
+}
+
+.winLose {
+    font-size: 8rem;
+}
+
+.play__again {
+    margin-bottom: 3.5rem;
 }
